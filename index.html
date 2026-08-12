@@ -3,39 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,follow">
   <title>Política de Privacidade — Caçador de Cupons</title>
   <style>
-    body{margin:0;background:#f5f7fb;color:#182033;font:16px/1.65 Arial,sans-serif}
-    main{max-width:860px;margin:40px auto;padding:40px;background:#fff;border:1px solid #e4e8f0;border-radius:24px;box-shadow:0 18px 50px rgba(20,30,55,.08)}
-    h1{margin-top:0;font-size:34px} h2{margin-top:30px;font-size:21px} p,li{color:#4f596e} code{background:#eef2f8;padding:2px 6px;border-radius:6px}
-    .date{color:#738096;font-weight:700} @media(max-width:700px){main{margin:0;padding:24px;border-radius:0}h1{font-size:28px}}
+    :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:#182033;font:16px/1.65 Arial,Helvetica,sans-serif}main{max-width:900px;margin:40px auto;padding:42px;background:#fff;border:1px solid #e4e8f0;border-radius:22px;box-shadow:0 16px 46px rgba(20,30,55,.08)}h1{margin:0 0 6px;font-size:34px;line-height:1.2}h2{margin-top:30px;font-size:21px;color:#172a4d}p,li{color:#4f596e}.date{color:#738096;font-weight:700}.notice{padding:14px 16px;background:#fff7df;border:1px solid #f2d88e;border-radius:12px}a{color:#135bd8}@media(max-width:700px){main{margin:0;padding:24px;border-radius:0}h1{font-size:28px}}
   </style>
 </head>
 <body>
 <main>
 <h1>Política de Privacidade — Caçador de Cupons</h1>
-<p class="date">Última atualização: 6 de agosto de 2026</p>
-<p>O Caçador de Cupons é uma extensão de navegador destinada a localizar, organizar, ativar e testar cupons de desconto em lojas compatíveis.</p>
-<h2>1. Dados enviados ao desenvolvedor</h2>
-<p>A extensão não envia dados pessoais, histórico de navegação, conteúdo do carrinho, dados de pagamento ou resultados de cupons para o desenvolvedor. O desenvolvedor não opera um servidor de coleta de dados para esta extensão.</p>
-<h2>2. Processamento local</h2>
-<p>Para executar suas funções, a extensão pode processar localmente o domínio da loja compatível, campos e botões de cupom, mensagens de aceitação ou recusa, valores do carrinho necessários para estimar o desconto e códigos encontrados em páginas públicas.</p>
-<h2>3. Dados armazenados no navegador</h2>
-<p>A extensão usa <code>chrome.storage.local</code> para salvar o histórico de códigos já testados, horários das tentativas, preferências técnicas, posição do botão flutuante e estado temporário da ativação de cupons oficiais. O usuário pode limpar o histórico pela interface ou remover os dados desinstalando a extensão.</p>
-<h2>4. Conexões com lojas e páginas públicas</h2>
-<p>A extensão consulta diretamente páginas públicas de cupons e páginas oficiais das lojas. Esses sites podem receber dados técnicos normais de uma requisição web, como endereço IP, navegador e cookies do próprio serviço. Quando uma página oficial exige autenticação, a extensão pode usar a sessão já existente somente para acessar o catálogo de cupons. A extensão não lê, copia ou transmite senhas.</p>
-<h2>5. Compartilhamento e venda de dados</h2>
-<p>A extensão não vende, aluga ou compartilha dados de usuários com anunciantes, corretores de dados ou parceiros comerciais. Não há publicidade personalizada, remarketing, telemetria ou criação de perfil comportamental.</p>
-<h2>6. Compras e pagamentos</h2>
-<p>A extensão não conclui compras e não aciona a confirmação final de pagamento. A validade e a aceitação dos cupons são definidas exclusivamente pelas lojas.</p>
-<h2>7. Segurança e uso limitado</h2>
-<p>Os dados acessados são usados somente para fornecer as funções visíveis de busca, ativação e teste de cupons. Todo o código executável está incluído no pacote distribuído pela Chrome Web Store.</p>
-<h2>8. Serviços de terceiros</h2>
-<p>A extensão é independente e não é afiliada, patrocinada ou endossada pelas lojas e sites de cupons que consulta. Cada serviço possui seus próprios termos e políticas.</p>
-<h2>9. Alterações nesta política</h2>
-<p>Esta política poderá ser atualizada para refletir mudanças funcionais, técnicas ou legais. A data da última atualização será indicada no início do documento.</p>
-<h2>10. Contato</h2>
-<p>Para dúvidas sobre privacidade ou suporte, utilize o e-mail de contato informado na página oficial da extensão na Chrome Web Store.</p>
+<p class="date">Última atualização: 12 de agosto de 2026</p>
+<p>Esta Política de Privacidade descreve como a extensão de navegador <strong>Caçador de Cupons</strong> trata informações necessárias para localizar cupons, comparar preços, consultar histórico de preços, criar alertas e abrir ofertas em lojas online compatíveis.</p>
+
+<h2>1. Informações processadas pela extensão</h2>
+<p>Para fornecer suas funcionalidades, a extensão pode processar informações da página de produto ou loja aberta pelo usuário, incluindo domínio da loja, URL do produto, nome do produto, preço exibido, elementos relacionados a cupons e informações técnicas necessárias para identificar a oferta e comparar preços.</p>
+<p>A extensão também pode processar localmente resultados de testes de cupons, preferências, produtos monitorados e dados necessários para exibir alertas e histórico.</p>
+
+<h2>2. Armazenamento local</h2>
+<p>Preferências, histórico de cupons, produtos monitorados, configurações e outros estados da extensão podem ser armazenados localmente no navegador por meio das APIs de armazenamento do Chrome. Esses dados podem ser removidos pelo usuário limpando os dados da extensão ou desinstalando-a.</p>
+
+<h2>3. Serviços externos e comparação de preços</h2>
+<p>Para localizar cupons, preços, histórico e ofertas, a extensão pode realizar requisições a páginas públicas de lojas, comparadores de preços e serviços compatíveis. Esses serviços podem receber informações técnicas normais de uma conexão web, como endereço IP, navegador, cookies do próprio serviço e a URL solicitada, de acordo com suas próprias políticas.</p>
+
+<h2>4. Serviço de redirecionamento de ofertas</h2>
+<p>Ao resolver ou abrir determinadas ofertas, a extensão pode enviar ao serviço do Caçador de Cupons a <strong>URL da oferta</strong> e a <strong>identificação da loja</strong>. Esses dados são usados exclusivamente para validar o destino, gerar um endereço de redirecionamento seguro e, quando aplicável, converter a oferta em um link de afiliado.</p>
+<p>O serviço de redirecionamento pode registrar informações técnicas mínimas necessárias para segurança, diagnóstico e contagem de cliques, como horário da requisição, loja de destino e resultado do redirecionamento. Não é necessário criar conta na extensão para utilizar essas funções.</p>
+
+<h2>5. Links de afiliados</h2>
+<p>Alguns links de ofertas podem ser convertidos em links de afiliados por redes ou programas de afiliados, incluindo, quando habilitado, serviços da Takeads/Mitgo ou programas diretos das lojas. Quando uma compra elegível é realizada após o uso de um desses links, o desenvolvedor pode receber uma comissão. Isso não aumenta o preço cobrado do usuário.</p>
+<p>Para atribuição da comissão, a rede de afiliados e a loja de destino podem utilizar cookies, identificadores de clique e outros mecanismos técnicos previstos em suas próprias políticas de privacidade.</p>
+
+<h2>6. Dados que não coletamos para fins próprios</h2>
+<p>O Caçador de Cupons não solicita nome, CPF, endereço residencial, número de cartão, senha bancária ou dados de pagamento. A extensão não vende dados pessoais e não utiliza as informações acessadas para publicidade comportamental personalizada, criação de perfil de crédito ou comercialização de bases de dados.</p>
+
+<h2>7. Permissões do navegador</h2>
+<p>A extensão utiliza permissões do Chrome necessárias às funções visíveis do produto, como armazenamento local, execução em lojas compatíveis, notificações, menus de contexto, alarmes e acesso aos domínios usados para localizar e comparar cupons, preços e ofertas.</p>
+
+<h2>8. Segurança</h2>
+<p>O serviço de redirecionamento restringe destinos a lojas autorizadas e utiliza validações para reduzir o risco de redirecionamentos indevidos. Credenciais de integrações externas, quando existentes, são mantidas no servidor e não são incluídas no código público da extensão.</p>
+
+<h2>9. Retenção</h2>
+<p>Dados armazenados localmente permanecem no navegador até serem apagados pelo usuário, pela própria lógica da extensão ou pela desinstalação. Registros técnicos do serviço de redirecionamento são mantidos apenas pelo período necessário para segurança, diagnóstico e operação do serviço.</p>
+
+<h2>10. Compartilhamento</h2>
+<p>Informações são compartilhadas somente quando necessário para executar uma funcionalidade solicitada pelo usuário, como consultar uma loja ou comparador, resolver uma oferta ou realizar atribuição de afiliado. Não vendemos dados pessoais a terceiros.</p>
+
+<h2>11. Crianças</h2>
+<p>A extensão é destinada a usuários que realizam compras online e não é direcionada especificamente a crianças.</p>
+
+<h2>12. Alterações nesta política</h2>
+<p>Esta política pode ser atualizada quando houver mudanças funcionais, técnicas ou legais. A data de atualização será indicada no início desta página.</p>
+
+<h2>13. Contato</h2>
+<p>Para dúvidas relacionadas à privacidade ou ao funcionamento da extensão, entre em contato pelo e-mail do desenvolvedor informado na página oficial do Caçador de Cupons na Chrome Web Store.</p>
+
+<p class="notice"><strong>Importante:</strong> esta página é a Política de Privacidade oficial da extensão Caçador de Cupons.</p>
 </main>
 </body>
 </html>
